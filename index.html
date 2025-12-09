@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: Cambia el título por algo relacionado con tu temática -->
+  <title>El rugido del Mustang</title>
+  <link rel="stylesheet" href="Styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CABECERA GLOBAL DEL SITIO -->
+  <header class="site-header">
+    <!-- TODO: Cambia el título por algo relacionado con tu temática -->
+    <h1>El Rugido del Mustang</h1>
+
+    <!-- TODO: Menú superior con enlaces a secciones de la misma página -->
+    <nav class="main-nav">
+      <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#modelos">Modelos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BOTÓN HAMBURGUESA FIJO PARA EL MENÚ LATERAL -->
+  <button class="open-menu" aria-label="Abrir menú lateral">
+    <img id="toggleIcon" src="Imagenes/boton.jpg" class="mustang-icon" alt="Icono menú Mustang">
+  </button>
+
+  <!-- MENÚ LATERAL DESLIZANTE -->
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#modelos">Modelos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-texto">
+        <h2 id="inicio">Bienvenido al Mundo del Ford Mustang</h2>
+        <p>
+          El Ford Mustang es mucho más que un coche: es una leyenda sobre ruedas, un
+          icono de potencia, diseño y libertad. Desde su lanzamiento en 1964, este
+          muscle car ha enamorado a millones con su estilo agresivo y su rugido
+          inconfundible.
+        </p>
+        <p>
+          En esta página descubrirás su evolución, sus modelos más emblemáticos, sus
+          características técnicas y por qué el Mustang sigue siendo uno de los coches
+          más admirados del planeta. Para más información oficial, visita la 
+          <a href="https://www.ford.es/coches/mustang" target="_blank" rel="noopener noreferrer">página oficial de Ford Mustang</a>.
+        </p>
+      </div>
+      <figure class="hero-imagen">
+        <img src="Imagenes/Intro.jpg" alt="Detalle de un Ford Mustang">
+      </figure>
+    </section>
+
+    <!-- SECCIÓN HISTORIA -->
+    <section class="seccion-historia">
+      <h2 id="historia">Historia</h2>
+      <!-- TODO: Usar CSS (preferiblemente Flex/Grid) para organizar las imágenes -->
+      <!-- Mínimo 6 imágenes -->
+      <div class="historia-texto">
+        <p>
+          El Ford Mustang nació en 1964 con una misión clara: crear un coche deportivo
+          accesible, juvenil y con una estética rompedora. Su éxito fue inmediato, y
+          desde entonces se ha convertido en un símbolo de la cultura automovilística.
+        </p>
+        <br/>
+        <p>
+          A lo largo de sus generaciones, el Mustang ha evolucionado manteniendo su
+          esencia: líneas agresivas, motores potentes y una identidad única que lo
+          diferencia de cualquier otro coche.
+        </p>
+        <br/>
+      </div>
+      <div class="historia-imgs">
+          <figure>
+            <img src="Imagenes/mustang1969.png" alt="Mustang clásico del 67">
+            <figcaption>El mítico Mustang clásico de los años 60.</figcaption>
+          </figure>
+          <figure>
+            <img src="Imagenes/evolucion.jpg" alt="Evolución del Mustang">
+            <figcaption>La evolución de sus líneas deportivas a lo largo del tiempo.</figcaption>
+          </figure>
+          <figure>
+            <img src="Imagenes/mustang1970.png" alt="Mustang años 70">
+            <figcaption>El Mustang en la década de los 70, manteniendo su esencia.</figcaption>
+          </figure>
+          <figure>
+            <img src="Imagenes/mustang1980.jpg" alt="Mustang años 80">
+            <figcaption>Renovación del diseño en los años 80.</figcaption>
+          </figure>
+          <figure>
+            <img src="Imagenes/Moderno.jpg" alt="Mustang moderno">
+            <figcaption>El Mustang moderno con tecnología avanzada.</figcaption>
+          </figure>
+          <figure>
+            <img src="Imagenes/Nuevo.jpg" alt="Mustang actual">
+            <figcaption>La generación actual del Ford Mustang.</figcaption>
+          </figure>
+      </div>
+
+    </section>
+
+    <!-- SECCIÓN TABLA -->
+    <section class="seccion-modelos">
+      <h2 id="modelos">Modelos</h2>
+      
+      <!-- Tabla comparativa de modelos -->
+      <div class="tabla-container">
+        <table class="tabla-modelos">
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Motor</th>
+              <th>Potencia (CV)</th>
+              <th>0-100 km/h</th>
+              <th>Precio (aprox.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mustang Ecoboost</td>
+              <td>4 cil. Turbo 2.3L</td>
+              <td>310 CV</td>
+              <td>5.1 s</td>
+              <td>Desde 45.000€</td>
+            </tr>
+            <tr>
+              <td>Mustang GT</td>
+              <td>V8 5.0L</td>
+              <td>450 CV</td>
+              <td>4.3 s</td>
+              <td>Desde 65.000€</td>
+            </tr>
+            <tr>
+              <td>Mustang Mach 1</td>
+              <td>V8 5.0L</td>
+              <td>480 CV</td>
+              <td>4.0 s</td>
+              <td>Desde 75.000€</td>
+            </tr>
+            <tr>
+              <td>Shelby GT500</td>
+              <td>V8 Supercargado 5.2L</td>
+              <td>760 CV</td>
+              <td>3.3 s</td>
+              <td>Desde 95.000€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="subtitulo-cards">Modelos destacados</h3>
+    <div class="modelos-grid">
+
+      <article class="card">
+        <figure>
+          <img src="Imagenes/clasico.jpg" alt="Mustang clásico">
+          <figcaption>Mustang Clásico</figcaption>
+        </figure>
+        <h3>Mustang Clásico</h3>
+        <p>El origen de la leyenda. Estilo retro, cromados y personalidad pura.</p>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="Imagenes/gt moderno.jpg" alt="Mustang GT moderno">
+          <figcaption>Mustang GT</figcaption>
+        </figure>
+        <h3>Mustang GT</h3>
+        <p>V8, diseño afilado y una potencia que hace temblar el asfalto.</p>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="Imagenes/shelby.jpg" alt="Mustang Shelby GT500">
+          <figcaption>Shelby GT500</figcaption>
+        </figure>
+        <h3>Shelby GT500</h3>
+        <p>El Mustang más salvaje: fuerza, velocidad y ADN de competición.</p>
+      </article>
+    </div>
+    </section>
+
+    <section class="seccion-galeria">
+      <h2 id="galeria">Galería de imágenes</h2>
+    
+      <div class="galeria-grid">
+        <figure>
+          <img src="Imagenes/vista frontal.jpg" alt="Mustang frontal">
+          <figcaption>Vista frontal del Ford Mustang</figcaption>
+        </figure>
+        <figure>
+          <img src="Imagenes/llanta.jpeg" alt="Detalle de llanta de Mustang">
+          <figcaption>Detalle de llanta deportiva</figcaption>
+        </figure>
+        <figure>
+          <img src="Imagenes/circuito.jpg" alt="Mustang en circuito">
+          <figcaption>Mustang en acción en circuito</figcaption>
+        </figure>
+        <figure>
+          <img src="Imagenes/interior.jpg" alt="Interior deportivo de Mustang">
+          <figcaption>Interior deportivo y tecnológico</figcaption>
+        </figure>
+        <figure>
+          <img src="Imagenes/carretera.avif" alt="Mustang en carretera">
+          <figcaption>Mustang en carretera abierta</figcaption>
+        </figure>
+        <figure>
+          <img src="Imagenes/atardecer.jpeg" alt="Mustang al atardecer">
+          <figcaption>Mustang al atardecer</figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+    <section class="seccion-contacto">
+      <h2 id="contacto">Contacto</h2>
+
+      <p>¿Quieres saber más sobre el Ford Mustang? ¡Ponte en contacto con nosotros!</p>
+
+      <form class="form-contacto" action="#" method="post">
+        
+        <fieldset id="fset1">
+          <legend>¿Quién eres?</legend>
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" />
+          </p>
+          <p>
+            Correo electrónico <input type="email" name="email" id="email">
+          </p>
+          <p>
+            Teléfono <input type="tel" name="telefono" id="telefono">
+          </p>
+        </fieldset>
+
+        <br/>
+
+        <fieldset id="fset2">
+          <legend>¿Qué modelo te interesa?</legend>
+          <p>
+            Modelo de Mustang
+            <select name="modelo" id="modelo">
+              <option>Selecciona un modelo</option>
+              <option value="ecoboost">Mustang Ecoboost</option>
+              <option value="gt">Mustang GT</option>
+              <option value="mach1">Mustang Mach 1</option>
+              <option value="shelby">Shelby GT500</option>
+              <option value="clasico">Mustang Clásico</option>
+            </select>
+          </p>
+          <p>
+            Tipo de consulta
+            <select name="consulta" id="consulta">
+              <option>Selecciona tipo de consulta</option>
+              <option value="info">Información general</option>
+              <option value="precio">Consulta de precios</option>
+              <option value="prueba">Solicitar prueba de conducción</option>
+              <option value="otra">Otra consulta</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <br/>
+
+        <fieldset id="fset3">
+          <legend>Tu mensaje</legend>
+          <p>
+            <label for="mensaje">Mensaje:</label><br/>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </p>
+        </fieldset>
+
+        <br/>
+
+        <fieldset id="fset4">
+          <legend>Preferencias de contacto</legend>
+          <p>
+            ¿Cómo prefieres que te contactemos?
+            <input type="radio" name="contacto" value="email" id="contacto-email">
+            <label for="contacto-email">Correo electrónico</label>
+            <input type="radio" name="contacto" value="telefono" id="contacto-telefono">
+            <label for="contacto-telefono">Teléfono</label>
+            <input type="radio" name="contacto" value="ambos" id="contacto-ambos">
+            <label for="contacto-ambos">Ambos</label>
+          </p>
+          <p>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Deseo recibir información sobre novedades del Ford Mustang</label>
+          </p>
+          <p>
+            <input type="checkbox" name="acepto" id="acepto" required>
+            <label for="acepto">Acepto la política de privacidad y el tratamiento de mis datos</label>
+          </p>
+        </fieldset>
+
+        <br/>
+
+        <p id="botones">
+          <input type="submit" value="Enviar consulta">
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <p><a href="#hero">&copy; 2025 — 1º DAM, IES Saladillo</a></p>
+  </footer>
+
+  <!-- JavaScript mínimo para abrir/cerrar el menú lateral -->
+  <script>
+    const sideMenu = document.getElementById("sideMenu");
+    const toggleBtn = document.querySelector(".open-menu");
+    const toggleIcon = document.getElementById("toggleIcon");
+
+    toggleBtn.addEventListener("click", () => {
+      sideMenu.classList.toggle("active");
+      toggleBtn.classList.toggle("active");
+
+      if (sideMenu.classList.contains("active")) {
+        toggleIcon.src = "Imagenes/boton.jpg";
+      } else {
+        toggleIcon.src = "Imagenes/boton.jpg";
+      }
+    });
+  </script>
+
+</body>
+</html>
